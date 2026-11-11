@@ -1,1 +1,95 @@
+1<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZionStream | Christian Streaming</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #090d18;
+  color: white;
+}
+header {
+  padding: 22px;
+  background: #111a2b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo { color: #d8b45c; font-size: 25px; font-weight: bold; }
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 12px;
+}
+.hero {
+  text-align: center;
+  padding: 85px 20px;
+  background: linear-gradient(135deg,#18294b,#090d18);
+}
+.hero h1 { font-size: 38px; }
+.hero p { color: #c5c8d2; }
+button {
+  background: #d8b45c;
+  border: none;
+  padding: 14px 25px;
+  border-radius: 7px;
+  font-weight: bold;
+}
+section { padding: 25px; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
+  gap: 15px;
+}
+.card {
+  background: #172239;
+  padding: 25px 12px;
+  border-radius: 10px;
+  text-align: center;
+}
+.card span { font-size: 35px; }
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #aaa;
+}
+</style>
+</head>
+<body>
 
+<header>
+  <div class="logo">✝ ZionStream</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#explore">Explore</a>
+  </nav>
+</header>
+
+<div class="hero" id="home">
+  <h1>Faith. Worship. Inspiration.</h1>
+  <p>Your home for Christian music, movies and sermons.</p>
+  <button onclick="document.getElementById('explore').scrollIntoView({behavior:'smooth'})">
+    Start Exploring
+  </button>
+</div>
+
+<section id="explore">
+  <h2>Explore ZionStream</h2>
+  <div class="cards">
+    <div class="card"><span>🎵</span><h3>Gospel Music</h3></div>
+    <div class="card"><span>🎬</span><h3>Christian Movies</h3></div>
+    <div class="card"><span>🎤</span><h3>Sermons</h3></div>
+    <div class="card"><span>🙏</span><h3>Worship</h3></div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 ZionStream. Spreading the Gospel through media.</p>
+</footer>
+
+</body>
+</html>
